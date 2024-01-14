@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Racing Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="circle do red-light stop-animation" ></div>
+        <div class="circle vang yellow-light stop-animation" ></div>
+        <div class="circle xanh green-light stop-animation" ></div>
+        <button onclick="startAnimation()" class="start-button">start</button>
+        <script src="./js/main.js"></script>
+    </div>
+    <div class="bottom">
+        <div class="xang-car"> 
+            <p>xăng xe 1</p>
+            <div class="xang"></div>
+            <p>xăng xe 2</p>
+            <div class="xang"></div>
+        </div>
+        <div class="road">
+            <div class="game-container">
+                <div class="car">
+                    <div class="car rung">
+                        <img class="anhxe" src="./img/car_1.png" alt="" data-xe="vàng">
+                    </div>
+                </div>
+                <div class="car">
+                    <div class="car rung">
+                        <img class="anhxe" src="./img/car_2.png" alt="" data-xe="đỏ">
+                    </div>
+                </div>
+            </div>
+            <div class="dich" onclick="stopcar()"></div>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="reset-button">Bắt đầu lại</button>
+    </div>
+</body>
+</html>
